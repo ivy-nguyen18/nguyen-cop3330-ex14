@@ -15,9 +15,10 @@ public class App
 
         System.out.print("What is the order amount? ");
         double amount = input.nextDouble();
+        input.nextLine();
 
         System.out.print("What is the state? ");
-        String state = input.next();
+        String state = input.nextLine();
 
         Tax tax = new Tax(amount);
         System.out.println(tax.stateTax(state));
